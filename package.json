@@ -1,0 +1,58 @@
+{
+  "name": "geographical-aspect-ratio",
+  "version": "0.1.1",
+  "description": "Utility to calculate aspect ratio from bounding box, and get width or height",
+  "homepage": "https://github.com/alrico88/geographical-aspect-ratio",
+  "author": {
+    "name": "Alberto Rico",
+    "email": "alrico88@gmail.com"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "keywords": [
+    "bbox",
+    "aspect ratio",
+    "width",
+    "height",
+    "bounding box"
+  ],
+  "devDependencies": {
+    "coveralls": "^3.0.7",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.6.0",
+    "eslint-config-xo": "^0.27.2",
+    "eslint-plugin-jest": "^23.8.2",
+    "husky": "^3.0.9",
+    "jest": "^24.8.0",
+    "lint-staged": "^9.4.3"
+  },
+  "engines": {
+    "npm": ">= 4.0.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.json": [
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "scripts": {
+    "pretest": "eslint .",
+    "test": "jest",
+    "prepublish": "yarn test"
+  },
+  "repository": "https://github.com/alrico88/geographical-aspect-ratio",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "license": "MIT"
+}
