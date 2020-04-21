@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Alberto Rico",
+      "authorEmail": "alrico88@gmail.com",
+      "authorUrl": ""
+    }
+  }
+}
